@@ -1,0 +1,21 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+This is the announcements page! Announcements here will always be signed with a PGP key. That can be found in the "PGP Key and why I use one" page once its done.
+I'm going to be working on placeholders for all pages. No pages should return 404 after today.
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE4tg+JRpCPX0mAs2yOSxtUVXeHqAFAmUkP8kACgkQOSxtUVXe
+HqCKURAAuE6A75sjkYH2rb8Bcu+wXaYtgx/V35HP3Mn/EZPmEGWYSETYlV1+6fgU
+RrzBwA5KoAtznf0lwxWON84TXNDQoFM8b4QibQXzuibCpoel6RXrpB49o+XTXzb7
+FYgewqEY8WCkKwLnI9Rzl0xygAUMuXfuqAaoyNnyks9PsaaBB2j2COg3ae8zSYOu
+EBMM4s/AM6yDX7yVd6JVx3k+dbWE2K/eeyUn591htqe/fO5K+3rB0kb1uhSCNzSM
+gCrAIe+CNr1pYrzePKZwOIqkS0B1sqWXrGgYYqz+qrkXUUglUEE8SO4ZoO/iFK85
+f8kRlytBiE56XfKL/VcwqHYxOIOIWrPRlXYV/fq26+CjXxEctc8Y3rhJDKD26L/l
+raCGYAaNzqIZkUDRGWmqF6rzwUoeRALjzsCuodVBzLCcb/z5YYDoQ9LwOOKAU+7X
+50tBo/YuJMRAYRUPaGuNjDGkCm8DkXzC0GNlEpchSYPLn/b8QuQXTXDbllVz945u
+oMIgXw3UQ3UcM2rAVQ4gLGeoSLGuEhU7fDFVWaTznETAWv/oAWzttQVT1zgeagkm
+MwkoooGuuDwYpBO7W0Cvwyjky59C54misjUNTNntC1RvllWTncvlmCCzehcxJAtB
+NF1Jic8drkDs6JElmcpNm6Fsvf8ka3nILdbax/kGKrgVBCl/PEo=
+=Q7n4
+-----END PGP SIGNATURE-----

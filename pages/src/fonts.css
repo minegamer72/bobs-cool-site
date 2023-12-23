@@ -1,0 +1,11 @@
+/* terminus */
+@font-face {
+    font-family: terminus;
+    src: url(../font/terminus/terminus.ttf);
+}
+ /*bold*/
+@font-face {
+    font-family: terminus;
+    src: url(../font/terminus/terminusBold-4.49.3.ttf);
+    font-weight: bold;
+}

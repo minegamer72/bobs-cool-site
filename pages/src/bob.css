@@ -1,0 +1,25 @@
+glowText {
+    text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
+    filter: glow(color=#c1fcff,strength=5);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+glowHover {
+    text-shadow: none;
+    filter: none;
+    font-size: 20px;
+    color: rgb(167, 167, 167);
+}
+glowHover:hover {
+    font-size: 22px;
+    text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
+    filter: glow(color=#c1fcff,strength=5);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #060608;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255,255,255);
+}

@@ -1,0 +1,20 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+I have changed some buttons to make them feel more responsive. I have also began work on banners for Rambles or Word Vomit.
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE4tg+JRpCPX0mAs2yOSxtUVXeHqAFAmU8RjgACgkQOSxtUVXe
+HqApoxAAqkRcP8kvSqPZOgRHwHnJWhOUETZ8T3pJK7R6g1NK2we2AD+L66xXhsvn
+4hszeKxeURT/K9zs8n3hzL1YY+uUHESLz1ybuzDBz03Lew9Rlqo8JVx9dB2/lJJ9
+vooYTFF/s/nrws9RXcaXJV8BXMCER9z/wKeCneZrIDnbB1R4Ix7F5Hj5Rq8B87nJ
+OfP54chwUXBUblHAGPf9NQgGR5uvLP6+gnYPWFKKsPQNOtJttoSODYreCZs+908z
+28tTeXe9ytvJxm0ZdUYpAOidtLqcMnSBzEzDEMZWvwNHrMXfq6QNpFFk1F/5k7+C
+KWcEv5l+R0WR2bIgUrJDgwxqoN9hg1rkgWDRn+SyCF/tcWGxKGQnSIgMjbpULsUZ
+nV8I/+H2C5CpfMq9hBrInZO4GY00Nb3FBpCKowZZoOtzs9aof9Tvi8bfQXlTJVGM
+d372NUDUt8zI8RY1eFZivNuiiPz9KIO3I3O6DHrLMVnBSvPoOXuPVsRERs+nZNPr
+WoJdW31unBN0KNQFSOSnuoF/9wqsGvIpxtUaEysgF9VQj3ufVnsaLGEQw5+igqCY
+lkIFGVk7O0pvmqi+fjdqwRqowqOoyi32Yl5EeDEJBZw7kXLy10Rw7ykbpapESK7c
+WSQ1pf98zxr/4VSAtYrUzZSL1hI2ona4c6aVi1qTTlcK8RSYdo8=
+=K7Bd
+-----END PGP SIGNATURE-----
