@@ -1,4 +1,4 @@
-const enabled = false
+const enabled = true
 
 $(document).ready(function() { // ONLY when the page is done loading.
     // so i can use nvim live view without ddosing TheCatAPI. enabled should be set to true
