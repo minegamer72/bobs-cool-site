@@ -121,6 +121,19 @@
   buttonLink:active {
       font-size: 20px;
   }
+
+  #chatBox {
+    display: none;
+  }
+
+  #chatboxrules:target {
+    display: none;
+  }
+
+  #chatboxrules:target + #chatBox {
+    visibility: visible;
+    display: block;
+  }
   </style>
 </head>
 <body><div id="main">
@@ -158,7 +171,15 @@
         &nbsp;
         <a href="pages/projects.html"><buttonLink>Projects</buttonlink></a>
       </p>
-<p> i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
+
+      <p> i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
+      <a href="#chatboxrules" id="chatboxrules">
+        <input id="chatboxrules" type="image" src="img/chatboxrules.png"/>
+      </a>
+      <span id="chatBox">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3535137&boxtag=bBqFq0" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+      </span>
+
 
     </div>
     <p style="text-align: center; font-size: 110%">This entire website is under the <a href="GNU General Public License v3.0">GNU General Public License v3.0</a>. Other images, including 3rd party site buttons are subject to their own licensing. You can view the source code of this website <a href="https://github.com/minegamer72/bobs-cool-site">here.</a> </p>
@@ -166,7 +187,9 @@
 
     <noscript><p style="text-align: center; font-size: 110%">If you are reading this, your browser either has JS disabled or does not support it. This website is mostly pure HTML and CSS, but only has two unimportant JS scripts. You're missing out on some cool cat facts and a cat picture.</p></noscript>
     <noscript><p style="text-align: center; font-size: 110%">If you're on a REALLY old browser (like IE7) then hotlinked images may not appear at all. The overall function of this website (a lot of text) is still preserved.</p></noscript>
-</div>
+  </div>
+
+
 </body>
 </html>
 
