@@ -1,3 +1,4 @@
+/* small library for things that are CONSTANTLY repeated. TODO: remove the repeated stuff and call this instead */
 glowText {
     text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
     filter: glow(color=#c1fcff,strength=5);
