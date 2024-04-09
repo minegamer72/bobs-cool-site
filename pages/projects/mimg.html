@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../src/bob.css">
+  <meta charset="UTF-8">
+  <title>Image Manipulations!</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    ol {
+      font-size: xx-large;
+      display: table;
+      margin: 0 auto;
+    }
+    div, iframe {
+      margin: 0 auto;
+    }
+    iframe {
+      display: block;
+      border-style:none;
+    }
+
+    #images {
+      line-height: 0;
+
+      -webkit-column-count: 5;
+      -webkit-column-gap: 0px;
+      -moz-column-count: 5;
+      -moz-column-gap: 0px;
+      column-count: 5;
+      column-gap: 0px;
+    }  
+    #images img {
+      width: 100% !important;
+      height: auto !important;
+      /* the zoom keeps going out of the viewport */
+      padding: 50px;
+    }
+
+    #images img:hover {
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+  <header>
+    <a id="top" href="../projects.html">
+        <p style="text-align: center;"><glowHover>Return</glowHover></p>
+    </a>
+  </header>
+  <body>
+    <h1><glowText>Image Manipulations!</glowtext></h1>
+    <hr>
+    <p> These are some image manipulation projects that I have done. For size reasons, these images are heavily compressed.</p> <br><br>
+    <section id="images">
+      <img src="mimgs/thebrick.jpg">
+    </section>
+  </body>
+</html>
