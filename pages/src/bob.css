@@ -6,6 +6,10 @@ glowText {
     color: rgb(255, 255, 255);
 }
 
+glowText a {
+  color: rgb(255,255,255);
+}
+
 glowHover {
     text-shadow: none;
     filter: none;
