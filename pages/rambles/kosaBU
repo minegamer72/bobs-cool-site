@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../src/bob.css">
+    <link rel="stylesheet" href="../src/ramble.css">
+    <meta charset="UTF-8">
+    <title>KOSA</title>
+    <style>
+    .pTitle {
+        font-family: sans-serif;
+        font-size: xx-large;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    hr {
+        size: 3px;
+    }
+
+    header {
+        text-align: left;
+        text-indent: 0%;
+        color: antiquewhite;
+        font:bolder;
+    }
+    ul {
+        font-size: larger;
+        display: table;
+        margin: 0 auto;
+    }
+    ol {
+        display: table;
+        margin: 0 auto;
+    }
+    
+    .textPage {
+        border: solid 5px;
+        border-color: white;
+        border-radius: 15px;
+        background-color: #131313;
+        text-align: center;
+        text-indent: 5px;
+    }
+    </style>
+</head>
+
+<header> 
+    <a id="top" href="../rambles.html">
+        <p style="text-align: center;"><glowHover>Return</glowHover></p>
+    </a>
+</header>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h1 style="text-align: center;"><glowText>KOSA</glowText></h1>
+    <p style="text-align: center;"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> <img src="/img/stamps/kosaButton.gif"> </p>
+    <br>
+    <glowtext><p style="text-align:center;">If you came from <a href="https://jodieblend.neocities.org/">jodieblend.neocities.org</a> or any external hyperlink, you should click the Return button above and read the legend at the bottom to avoid misinterpretation when reading my writings.</p></glowtext>
+    <div class="textPage">
+      <h1>KOSA is a bill that is being used to violate the First Amendment.</h1> 
+        Here are some resources that detail just how bad this bill really is: 
+        <br>
+        <a href="https://www.eff.org/deeplinks/2024/02/dont-fall-latest-changes-dangerous-kids-online-safety-act">https://www.eff.org/deeplinks/2024/02/dont-fall-latest-changes-dangerous-kids-online-safety-act</a>
+        <br><a href="https://www.stopkosa.com/">Write a letter!</a> <br>
+        <a href="https://act.eff.org/">Take Action against KOSA!</a> <br>
+        <br>
+        <h1>What will happen if this is passed federally or in all states?</h1>
+      If this bill is passed, it is a major blow to basic human rights like freedom of speech, privacy and beliefs. <br>
+        Sites that have any of these will require users to input government issued ID in to a 3rd party company that has said they will monetize this data:
+        <br><br>
+        <ul>
+            <b>
+                <li>Adult entertainment</li>
+                <li>Any form of LGBTQ+ material</li>
+                <li>Any form of sexual health and reproductive rights information</li>
+                <li>Any "depressing" history like of marginalized groups</li>
+                <li>Any way to contact lawmakers about changes to free speech laws, firearms laws, etc</li>
+                <li>Any way to obtain news that is considered "depressing" by the government. (like the war in Palestine, Ukraine, etc)</li>
+            </b>
+        </ul> <br>
+        It will also hurt any adults who just do not want to give up their government issued identifications. Not only that, it has increased the amount of identity theft as people want to access these services without giving up their identity. <br>
+        There have also been reports of surveillance and extortion. Not only that, these companies most likely withold this information meaning if they get hacked bad enough, thousands or potentially millions of people will be at severe risk of identity theft. 
+      <opinion>There is simply no upside to this bill.</opinion>
+        <h1>What will happen to this website if this is passed federally or in all states?</h1>
+        If Neocities requires age verification for individual websites or just to access Neocities, this website will only host a link to the onion version of this site. Otherwise, nothing! Bookmark it or write it down if you care that much about me! <br> <br>
+
+        ocrnf4fws72jiugns24un53mqkciywvsspss4gz7fhoemwtb2asuy3qd.onion<br>
+        ocrnf4fws72jiugns24un53mqkciywvsspss4gz7fhoemwtb2asuy3qd.onion<br>
+        ocrnf4fws72jiugns24un53mqkciywvsspss4gz7fhoemwtb2asuy3qd.onion<br>
+        <br>
+        <h1>What should we be doing instead of KOSA?</h1>
+        Instead of violating our freedom of speech, we should be providing educational tools that provide parents with the tools that already exist and work better than KOSA ever will. 
+        <br> <a href="https://github.com/columndeeply/hosts">This is a list of around 10,000,000 porn sites in hosts files.</a> <br>
+        Scroll down the README part <a href="https://github.com/columndeeply/hosts?tab=readme-ov-file#hosts-file">or click here</a> for easy installation instructions. You will need administrator/root privileges to install.
+        <br>
+        If you don't want to use mega for downloading merged files, you can click on scripts, you will get scripts for GNU/Linux operating systems. 
+      <br>
+        <br><a href="https://pi-hole.net/">This is a DNS blocker for GNU/Linux operating systems. This takes a bit of setting up but configuration seems easy.</a> <br>
+        <a href="https://technitium.com/dns/">This is one that will work with Windows.</a>
+
+        <h1>Summary</h1>
+        It doesn't matter if you're pro-Israel, pro-Palestine, pro-Ukraine, pro-Russia, pro-gun, anti-gun, democrat, republican, liberal or conservative, free speech is something that is needed by all of these groups. KOSA is a bill that is trying to take that away from all of them.
+        <p style="font-size: xx-small">DATE FORMAT: DD/MM/YYYY</p>
+        <p style="font-size:small;">bob, last edit was on 7/4/2024 @ 4:04 PM</p>
+    </div>
+    <h4 style="text-align: center;"><a href="#top">Return to Top</a></h4>
+</body>
+</html>

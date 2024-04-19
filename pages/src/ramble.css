@@ -1,0 +1,12 @@
+/* small library for things that are CONSTANTLY repeated in rambles. TODO: remove the repeated stuff and call this instead */
+
+/* because in rambles i present myself as someone with information you may not have, i want to separate facts from opinions ESPECIALLY in political rambles. this is my way of doing that. */
+
+@font-face {
+  font-family: "deltablock";
+  src: url("../font/deltablock/DeltaBlock-Regular.ttf");
+}
+
+opinion {
+  font-family: "deltablock";
+}
