@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jquery-->
-<script src="js/getcatfact.js"></script>
-<script src="js/getcat.js"></script>
-<title>Bob's cool site!</title>
-<meta charset="UTF-8"> <!--some things dont load properly without this-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--CSS-->
-<style>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jquery-->
+  <!--<script src="js/getcatfact.js"></script> -->
+  <script src="js/getcat.js"></script>
+  <script src="js/mainLoader.js"></script>
+  <title>Bob's cool site!</title>
+  <meta charset="UTF-8"> <!--some things dont load properly without this-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <style>
+  /* This handles nonfree elements. */ 
+  .noJS {
+    display: none;
+  }
+
   .centerimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-  
+
   .link-grid {
     display: grid;
     justify-content: center;
@@ -23,23 +29,23 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   .link-grid a {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-  
+
   .link-grid img {
     max-width: 100%;
     max-height: 100%;
   }
-  
+
   .cat {
     max-width: 100%;
     height: 300px;
@@ -51,7 +57,7 @@
     padding: 1px;
     border-radius: 3px;
   }
-  
+
   .linkbox {
     width: 70%;
     float: center;
@@ -64,13 +70,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   body {
     color: white;
     background-color:#060608;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  
+
   .link {
     text-decoration: none;
     background-color: rgb(54, 54, 54);
@@ -79,122 +85,107 @@
     border-radius: 6px 6px 6px 6px;
     transform: skew(5deg, 10deg);
   }
-  .link:active {
+  .link:active {Preferably, I do not want to alter the DOM.
     background-color: rgb(36, 36, 36);
     padding: 5px;
   }
-  
+
   .link:hover {
     box-shadow: 3px 5px 2px rgba(15, 15, 15, 0.507);
     text-shadow: 2px 1px 2px black;
   }
-  
+
   ol {
     display: table;
     margin: 0 auto;
   }
-  
+
   hr {
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.507);
   }
-  
+
   glowText {
     text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
     filter: glow(color=#c1fcff,strength=5);
     font-size: 30px;
     color: rgb(255, 255, 255);
   }
-  
+
   buttonLink {
-      text-shadow: none;
-      filter: none;
-      font-size: 20px;
-      color: rgb(167, 167, 167);
+    text-shadow: none;
+    filter: none;
+    font-size: 20px;
+    color: rgb(167, 167, 167);
   }
-  
+
   buttonLink:hover {
-      font-size: 22px;
-      text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
-      filter: glow(color=#c1fcff,strength=5);
-      color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
+    filter: glow(color=#c1fcff,strength=5);
+    color: rgb(255, 255, 255);
   }
   buttonLink:active {
-      font-size: 20px;
+    font-size: 20px;
   }
-  /* it would be moronic to use JS for this simple task */
-  #chatBox {
-    display: none;
-  }
-
-  #chatboxrules:target {
-    display: none;
-  }
-
-  #chatboxrules:target + #chatBox {
-    visibility: visible;
-    display: block;
-  }
+}
   </style>
 </head>
-<body><div id="main">
-  
+  <body><div id="main">
+
     <title>Bob's Cool Site!</title>
 
     <h1 style="text-align:center; color:aliceblue"><glowtext>Welcome to my website!</glowtext></h1> <!-- about me header -->
-    <h5 style="text-align:center; color:aliceblue">You are using the clearnet version of this website!<br> Onion Site: ocrnf4fws72jiugns24un53mqkciywvsspss4gz7fhoemwtb2asuy3qd.onion</h4> <!-- clearnet notice -->
-    <a href="pages/rambles/KOSA.html"><p style="text-align:center;">Here is the main reason why I am hosting this.</p></a>
-    <a href="https://thecatapi.com/">
-      <p style="text-align:center; color:rgb(255, 255, 255); text-decoration: none;"><u>thecatapi.com</u></p>
-    </a>
-		<div id="cat-images"></div>
-
-    <h3 style="text-align:center; color:aliceblue">Random Cat Facts:</h3>
-    <p style="text-align:center; color:aliceblue;font-size:small;">These facts came from a no-license JSON table. There have been few modifications. If there are any untrue statements in this table, please let me know!</p>
-    <h2 style="text-align:center; color:rgb(204, 204, 204)" id="cat-fact"><i>JS must be enabled for this to work.</i></h2>
-    <br>
-    <!--link box -->
-    <div class="linkbox">
-      <h3 style="color:white"><glowtext>Page Directory</glowtext></h3>
-      <p>| # = WIP or what I'm focusing on. | X = 404 (doesn't exist yet) | ! = New |</p>
-      <hr>
-      <p style="color:white">
-        <a href="pages/announcements.html"><buttonLink>Site Announcements</buttonLink></a>
-        &nbsp;
-        <a href="pages/whoami.html"><buttonLink>Who am I?</buttonLink></a>
-        &nbsp;
-        <a href="pages/definitions.html"><buttonLink>Word Definitions</buttonLink></a>
-        &nbsp;
-        !<a href="pages/writings.html"><buttonLink>Writings</buttonLink></a>
-        &nbsp;
-        <a href="pages/pgp.html"><buttonLink>PGP Key and Why I use one</buttonLink></a>
-        &nbsp;
-        <a href="pages/buttons.html"><buttonLink>Button Collection</buttonLink></a>
-        &nbsp;
-        <a href="pages/projects.html"><buttonLink>Projects</buttonlink></a>
-      </p>
-
-      <p> i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
-      <p>Your content blocking settings may block this!</p>
-      <p>This Iframe is also nonfree!</p>
-      <a href="#chatboxrules" id="chatboxrules">
-        <input id="chatboxrules" type="image" src="img/chatboxrules.png"/>
+    <h5 style="text-align:center; color:aliceblue">You are using the clearnet version of this website!<br> Onion Site: ocrnf4fws72jiugns24un53mqkciywvsspss4gz7fhoemwtb2asuy3qd.onion <!-- clearnet notice -->
+      <a href="pages/rambles/KOSA.html"><p style="text-align:center;">Here is the main reason why I am hosting this.</p></a>
+      <a href="https://thecatapi.com/">
+        <p style="text-align:center; color:rgb(255, 255, 255); text-decoration: none;"><u>thecatapi.com</u></p>
       </a>
+      <div id="cat-images" class="noJS"></div>
+<!--
+      <h3 style="text-align:center; color:aliceblue">Random Cat Facts:</h3>
+      <p style="text-align:center; color:aliceblue;font-size:small;">These facts came from a no-license JSON table. There have been few modifications. If there are any untrue statements in this table, please let me know!</p>
+      <h2 style="text-align:center; color:rgb(204, 204, 204)" id="cat-fact"><i>JS must be enabled for this to work.</i></h2>
+-->
 
-      <span id="chatBox">
-        <iframe src="https://www3.cbox.ws/box/?boxid=3535137&boxtag=bBqFq0" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-      </span>
-
-
-    </div>
-    
-
-    <p style="text-align: center; font-size: 75%">This entire website is under the <a href="LICENSE.txt">GNU General Public License v3.0</a>. First party images (the ones that I own and have created) are under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 license</a>. Other images, including 3rd party site buttons are subject to their own licensing. Iframes or embeds that go to other sites are subject to their own licensing. You can view the source code of this website <a href="https://github.com/minegamer72/bobs-cool-site">here</a>.</p>
-    
-    <noscript><p style="text-align: center; font-size: 110%">If you are reading this, your browser either has JS disabled or does not support it. This website is mostly pure HTML and CSS, but only has two unimportant JS scripts and a few 3rd-party embeds. You're missing out on some cool cat facts and a cat picture along with a few links.</p></noscript>
-    <noscript><p style="text-align: center; font-size: 110%">If you're on a REALLY old browser (like IE7) then hotlinked images may not appear at all. The overall function of this website (a lot of text) is still preserved.</p></noscript>
+      <br>
+        <!--link box -->
+      <div class="linkbox">
+        <h3 style="color:white"><glowtext>Page Directory</glowtext></h3>
+        <p>| # = WIP or what I'm focusing on. | X = 404 (doesn't exist yet) | ! = New |</p>
+        <hr>
+        <p style="color:white">
+          <a href="pages/announcements.html"><buttonLink>Site Announcements</buttonLink></a>
+          &nbsp;
+          <a href="pages/whoami.html"><buttonLink>Who am I?</buttonLink></a>
+          &nbsp;
+          <a href="pages/definitions.html"><buttonLink>Word Definitions</buttonLink></a>
+          &nbsp;
+          !<a href="pages/writings.html"><buttonLink>Writings</buttonLink></a>
+          &nbsp;
+          <a href="pages/pgp.html"><buttonLink>PGP Key and Why I use one</buttonLink></a>
+          &nbsp;
+          <a href="pages/buttons.html"><buttonLink>Button Collection</buttonLink></a>
+          &nbsp;
+          <a href="pages/projects.html"><buttonLink>Projects</buttonlink></a>
+        </p>
+        
+        <p class="noJS"> i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
+        <br>
+          I removed the chatbox because of its use of nontrivial javascript. If you have questions or comments about the website, <a href="pages/whoami.html#contact">you can reach me here.</a> 
+        <br><br>
+      </div>
+      <p style="text-align: center; font-size: 75%">The HTML, CSS and JS code for this website is under the <a href="LICENSE.txt">GNU General Public License v3.0</a>. First party images (the ones that I own and have created) are under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 license</a>. Other images, including 3rd party site buttons are subject to their own licensing. Iframes or embeds that go to other sites are subject to their own licensing. You can view the source code of this website <a href="https://github.com/minegamer72/bobs-cool-site">here</a>.</p>
+      <noscript><p style="text-align: center; font-size: 110%">If you are reading this, your browser either has JS disabled or does not support it. This website is mostly pure HTML and CSS, but only has two unimportant JS scripts and a few 3rd-party embeds. You're missing out on some cool cat facts and a cat picture along with a few links.</p></noscript>
+      <noscript><p style="text-align: center; font-size: 110%">If you're on a REALLY old browser (like IE7) then hotlinked images may not appear at all. The overall function of this website (a lot of text) is still preserved.</p></noscript>
   </div>
+  <noscript>
+    <style>
+      .noJS {
+        display: none !important;
+      }
+    </style
+  </noscript>
 
-
-</body>
+  </body>
 </html>
 
