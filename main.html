@@ -4,16 +4,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jquery-->
   <!--<script src="js/getcatfact.js"></script> -->
   <script src="js/getcat.js"></script>
-  <script src="js/mainLoader.js"></script>
   <title>Bob's cool site!</title>
   <meta charset="UTF-8"> <!--some things dont load properly without this-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--CSS-->
   <style>
-  /* This handles nonfree elements. */ 
-  .noJS {
-    display: none;
-  }
+
 
   .centerimg {
     display: block;
@@ -140,7 +136,7 @@
       <a href="https://thecatapi.com/">
         <p style="text-align:center; color:rgb(255, 255, 255); text-decoration: none;"><u>thecatapi.com</u></p>
       </a>
-      <div id="cat-images" class="noJS"></div>
+      <div id="cat-images"  ></div>
 <!--
       <h3 style="text-align:center; color:aliceblue">Random Cat Facts:</h3>
       <p style="text-align:center; color:aliceblue;font-size:small;">These facts came from a no-license JSON table. There have been few modifications. If there are any untrue statements in this table, please let me know!</p>
@@ -169,7 +165,7 @@
           <a href="pages/projects.html"><buttonLink>Projects</buttonlink></a>
         </p>
         
-        <p class="noJS"> i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
+        <p  > i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
         <br>
           I removed the chatbox because of its use of nontrivial javascript. If you have questions or comments about the website, <a href="pages/whoami.html#contact">you can reach me here.</a> 
         <br><br>
@@ -178,14 +174,6 @@
       <noscript><p style="text-align: center; font-size: 110%">If you are reading this, your browser either has JS disabled or does not support it. This website is mostly pure HTML and CSS, but only has two unimportant JS scripts and a few 3rd-party embeds. You're missing out on some cool cat facts and a cat picture along with a few links.</p></noscript>
       <noscript><p style="text-align: center; font-size: 110%">If you're on a REALLY old browser (like IE7) then hotlinked images may not appear at all. The overall function of this website (a lot of text) is still preserved.</p></noscript>
   </div>
-  <noscript>
-    <style>
-      .noJS {
-        display: none !important;
-      }
-    </style
-  </noscript>
-
   </body>
 </html>
 
