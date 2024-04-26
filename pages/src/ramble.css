@@ -10,3 +10,71 @@
 opinion {
   font-family: "deltablock";
 }
+
+/* elements */
+h2 {
+  text-align: center;
+}
+
+hr {
+  size: 3px;
+}
+
+header {
+  text-align: left;
+  text-indent: 0%;
+  color: antiquewhite;
+  font:bolder;
+}
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+ul li {
+  font-size: larger;
+}
+
+ol {
+
+  display: table;
+  margin: 0 auto;
+}
+
+ol li {
+  font-size: larger;
+}
+
+.textPage {
+  border: solid 5px;
+  border-color: white;
+  border-radius: 15px;
+  background-color: #131313;
+  text-align: center;
+  text-indent: 5px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid;
+  width: 30%;
+}
+
+input[type=checkbox] {
+  font-size: larger;
+}
+
+.codebox {
+  border:1px solid black;
+  background-color:#1b1b1b;
+  width:70%;
+  overflow:auto;    
+  padding:10px;
+}
+.codebox code {
+  text-align: left;
+}

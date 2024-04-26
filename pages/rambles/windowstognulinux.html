@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../src/bob.css">
+    <link rel="stylesheet" href="../src/ramble.css">
+    <meta charset="UTF-8">
+    <title>Windows -> GNU/Linux</title>
+    <style>
+    </style>
+</head>
+
+<header> 
+    <a id="top" href="../rambles.html">
+        <p style="text-align: center;"><glowHover>Return</glowHover></p>
+    </a>
+</header>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h1 style="text-align: center;"><glowText>Switching to GNU/Linux</glowText></h1>
+    <br>
+    <div class="textPage"> 
+        <br>
+        Here are a few things that this page will assume: <br><br>
+        <ul>
+            <li>You are a Microsoft Windows user.</li>
+            <li>You use very little to no <a href="../definitions.html#freesoftware">free software</a> or don't know.</li>
+            <li>You have little to no experience with a command line interface (like Windows Powershell or CMD)</li>
+            <li>You have no experience with GNU/Linux (or erroneously referred to as just Linux)</li>
+        </ul>
+        <h1 id="before">Before</h1>
+        I love checklists. So, I will provide one that goes over what I believe to be the most important parts before switching to GNU/Linux. We will discuss every one of these points in this section.<br><br>
+        <input type="checkbox"> See if the software you currently use has a GNU/Linux version<br>  
+        <input type="checkbox"> (Optional but <b>heavily</b> recommended) Switch to libre alternatives of the software you use.<br> 
+        <input type="checkbox"> (Optional) Learn to use virtual machines<br>    
+        <input type="checkbox"> (Optional) Learn to dual boot<br> 
+        <input type="checkbox"> Find the right GNU/Linux distribution for you<br>  
+        <br>
+        <br>
+        Before switching to a GNU/Linux operating system, you should research the apps you use the most and see if they have a GNU/Linux version. Most of the time, there will be a 
+        GNU/Linux version. However, with software like those from the Adobe Creative Cloud, there will not be any. This leaves you with three options:
+        <ol>
+            <li>Learn to use virtual machines</li> (virtual machines aren't that hard!)
+            <li>Figure out how to get it to work under compatibility tools like <a href="https://www.winehq.org/">WINE</a>.</li> (it is mostly just as easy as opening the app with the tool)
+            <li>Learn to use a libre alternative.</li> (Note: Libre software is the same as <a href="../definitions.html#freesoftware">free software</a>. I will continue to use the term libre software.)
+        </ol>
+        <br>
+        Before switching to GNU/Linux, you should learn about 1 and 3. The only caveat with virtual machines is that it requires extra computing power, however, the extra computing power required is usually not that much but more is always better.<br>
+        Learning to use libre alternatives to software you already use may or may not be a challenge depending on the kind of person you are. This is why "Learn to use a libre alternative" is in <a href="#before">Before</a><br>
+        Here is a chart that contains libre alternatives to common proprietary software: <br> <br>
+        <table class="center">
+            <tr>
+                <th>Adobe</th>
+                <th>Libre</th>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td><a href="https://www.gimp.org/">GIMP</a></td>
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+                <td><a href="https://inkscape.org/">Inkscape</a></td>
+            </tr>
+            <tr>
+                <td>After Effects</td>
+                <td><a href="https://natrongithub.github.io/">Natron</a></td>
+            </tr>
+            <tr>
+                <td>Premiere Pro</td>
+                <td><a href="https://kdenlive.org/">Kdenlive</a></td>
+            </tr>
+            <tr>
+                <td>Adobe Xd</td>
+                <td><a href="https://penpot.app/">Penpot</a></td>
+            </tr>
+        </table> 
+        <br> <br>
+        <table class="center">
+            <tr>
+                <th>Proprietary</th>
+                <th>Libre</th>
+            </tr>
+            <tr>
+                <td>Cinema 4D/Maya</td>
+                <td><a href="https://www.blender.org/">Blender</a></td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td><a href="https://www.mozilla.org/">Firefox</a>/<a href="https://www.gnu.org/software/gnuzilla/">GNU Icecat</a>/<a href="https://librewolf.net/">Librewolf</a></td>
+            </tr>
+        </table> <br>
+        If you choose to switch software, you should take time to learn it to the same level as the proprietary one you were already using. <br>
+        You also have the option of using virtual machines. I recommend that you use a libre virtual machine manager (I will use the term hypervisor) like <a href="https://www.qemu.org/">QEMU</a> and <a href="https://www.kicksecure.com/wiki/Dev/VirtualBox#VirtualBox_Unavailable_in_Debian_main_due_to_Licensing_Issues">maybe not</a> <a href="https://www.virtualbox.org/">VirtualBox</a>.
+        QEMU uses the command line for its operation but you are able to get an app that uses a graphical window, although I recommend using the command line Powershell to get used to using the command line. I will demonstrate using QEMU and VirtualBox later. <br><br>
+        <div class="codebox center">
+            <code>
+                i am slamming penith in car door
+            </code>
+        </div>
+
+        <br><br>
+    </div>
+    <h4 style="text-align: center;"><a href="#top">Return to Top</a></h4>
+</body>
+</html>
