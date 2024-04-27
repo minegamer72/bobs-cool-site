@@ -20,6 +20,12 @@ hr {
   size: 3px;
 }
 
+img {
+  display: block;
+  width: 20%;
+  height: auto;
+}
+
 header {
   text-align: left;
   text-indent: 0%;
@@ -36,7 +42,6 @@ ul li {
 }
 
 ol {
-
   display: table;
   margin: 0 auto;
 }
@@ -77,4 +82,8 @@ input[type=checkbox] {
 }
 .codebox code {
   text-align: left;
+}
+
+cite {
+  font-size: xx-small;
 }
