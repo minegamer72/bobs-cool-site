@@ -41,7 +41,7 @@
         <ol>
             <li>Learn to use virtual machines</li> (virtual machines aren't that hard!)
             <li>Figure out how to get it to work under compatibility tools like <a href="https://www.winehq.org/">WINE</a>.</li> (it is mostly just as easy as opening the app with the tool)
-            <li>Learn to use a libre alternative.</li> (Note: Libre software is the same as <a href="../definitions.html#freesoftware">free software</a>. I will continue to use the term libre software.)
+            <li>Learn to use a libre alternative.</li> (Note: Libre software is the same as <a href="../definitions.html#freesoftware">free software</a>. I will continue to use the term libre software.) <br> Note: If you don't understand the difference between "open source" and "free" you absolutely need to read <a href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">this article from gnu.org</a>
         </ol>
         <br>
         Before switching to GNU/Linux, you should learn about 1 and 3. The only caveat with virtual machines is that it requires extra computing power, however, the extra computing power required is usually not that much but more is always better.<br>
@@ -84,20 +84,365 @@
                 <td><a href="https://www.blender.org/">Blender</a></td>
             </tr>
             <tr>
-                <td>Google Chrome</td>
+                <td>Google Chrome/Opera GX*</td>
                 <td><a href="https://www.mozilla.org/">Firefox</a>/<a href="https://www.gnu.org/software/gnuzilla/">GNU Icecat</a>/<a href="https://librewolf.net/">Librewolf</a></td>
             </tr>
-        </table> <br>
+        </table>
+        *Love the Opera GX look? <a href="https://github.com/Godiesc/firefox-gx">You don't have to leave it behind!</a> <br>
+        <br>
         If you choose to switch software, you should take time to learn it to the same level as the proprietary one you were already using. <br>
-        You also have the option of using virtual machines. I recommend that you use a libre virtual machine manager (I will use the term hypervisor) like <a href="https://www.qemu.org/">QEMU</a> and <a href="https://www.kicksecure.com/wiki/Dev/VirtualBox#VirtualBox_Unavailable_in_Debian_main_due_to_Licensing_Issues">maybe not</a> <a href="https://www.virtualbox.org/">VirtualBox</a>.
-        QEMU uses the command line for its operation but you are able to get an app that uses a graphical window, although I recommend using the command line Powershell to get used to using the command line. I will demonstrate using QEMU and VirtualBox later. <br><br>
-        <div class="codebox center">
-            <code>
-                code box test
-            </code>
+        As for virtual machines and dual booting, they are so easy to accomplish that it takes one web search to figure it out. <br> <br>
+        Now, let's find the right GNU/Linux distribution. I will assume that you do not want to spend hours or even days configuring a system, so this is going to be based off of the experience you get when you just install it. I will use the term "Out of box experience" to describe this.
+        <br>(Note: In reality, all of these distributions can be used for any purpose. Again, I am just describing the experience from installing it and doing absolutely no configuration.)
+
+        <h2>Gaming</h2>
+        Unfortunately, gaming comes with the caveat that almost every game on the proprietary gaming platform Steam is proprietary software. The amount of proprietary software you will need to install depends on your computer. If you have an NVIDIA graphics card, you have the option of libre drivers.
+        However, they do not perform as well as the proprietary driver (as of 26/4/24). This means to get the most performance, you will need to use proprietary software. Intel CPUs and graphics cards are also bad. If you are an AMD graphics card and CPU user, you are extremely lucky! GNU/Linux has really good libre support. The distribution I (and almost every GNU/Linux user will tell you this) recommend Pop!OS by System76.<br>
+        <a href="https://pop.system76.com/">Pop!OS homepage</a>
+        <div data-v-decb3084="" class="logo" style="display:block; margin:auto; text-align:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1800 0 5000 549" align="center">
+                <path d="M926.2 397.2c-1.9 7.9-6 14.9-13 19.3-11 6.9-24.4 4.9-33.9-3.5-8.9-7.8-11.9-21-9.1-32.4 2.9-11.9 12.1-22.4 23.9-25.7 26.3-7.3 37.2 21.3 32.1 42.3zM910.1 316c-16.3-6.5-10.7-92 4.2-195.8 4.2-29 11.4-42.7 19.5-49.7 11.6-9.9 32.7-10.3 47-8.2 16.4 2.4 32.1 10 44 21.5 10.5 10.2 11.7 20.6 8.1 34.1-5.9 21.5-16 42.1-25.7 62.2-2.3 4.9-22.4 43-25.1 47.7-48.5 85.4-58.2 93.7-72 88.2z" fill="#6CC7D2"></path>
+                <path d="M581.1 277.5c9.6 41 8.6 86 .4 118.4-7.7 30.6-28.6 58-61.8 67.2-29.1 8.1-63 2.2-83.8-17.8-34.2-32.8-54.2-109.8-45.3-165.7 7.2-44.9 31.4-102.4 84.5-104.9 3.4-.2 6.8-.1 10.2.2 54.1 4.9 83.6 50.5 95.8 102.6zm-97.8 93.3c3 .5 6 .5 9-.4 10.1-2.9 15.9-13.4 18.6-23.6 4.1-15.5 3.5-32.2-1.8-47.4-2.7-7.7-6.7-15.2-12.8-20.8-21.5-19.7-43 .8-46.7 24.1-2.9 18.2 1.3 39.3 12.7 54 5.3 6.8 12.9 12.7 21 14.1z" fill="#BBB5B3"></path>
+                <path d="M698.2 364.4c-.1 75.7 7.5 133.6-25.8 140.5-27 5.5-26.1-18.2-28.2-38.1-8-77.1-15.3-205.2-18.4-282.7 2.2-33.3 24.5-53.7 47.7-58.7 35.8-7.7 74-5.5 105.7 14.1 62.7 38.8 67.7 110 29.7 168.1-20.8 31.7-83.7 54.7-110.7 52.7v4.1zm8-169.7c-3.9.6-10.3 2.4-12.1 6.2-4.3 8.9-4 65.4 3.5 89.1 1.2 3.9 3.9 7.6 7.8 9 14.2 5.2 27-12.2 32.8-22.7 8.1-14.6 10.7-31.8 5.6-47.8-4.8-14.9-19.7-36.5-37.6-33.8z" fill="#99918D"></path>
+                <path d="M339.6 232.3C316.1 282 277.1 321.5 223.1 341c15.5 40.5 31.3 80.5 46.7 120.9 8.6 21.8 16.8 45.7 9.3 67.2-7.8 22-38.2 28.1-60.3 4.7C176.3 488.6 32.6 202.2 22 180.7 13 162.2-.5 142.4-.1 121c.7-32.2 50.5-64.8 74.4-81.5C107.7 16.2 146.3.3 187.6.2c32.2 0 59.7 8.8 84.1 24.4 37.4 24 63.4 62.3 73 105.6 8.4 38.1 6.6 77.1-5.1 102.1m-109.5-54.4c-8.4-30.5-27.4-58.6-51.3-78.3-5.2-4.3-10.8-8.3-17.3-10.5-44.8-14.7-25.4 60.2-18.1 79.1 10.1 26.5 25.4 60 45.9 80 4.5 4.4 9.8 8.3 15.9 9.5 9.3 1.9 17.9-4.6 22.6-12.2 3.9-6.3 5.4-13.8 6.3-21.1 1.7-15.5.2-31.3-4-46.5z" fill="#48B9C7"></path>
+                <path d="M1337.8 460.8c-.2 43.9-27 87.8-86.1 87.8-59.1 0-86.6-43.2-86.6-87.3 0-55 38.3-89 87.8-89 57.4.5 85.4 43.1 84.9 88.5zm-84.9-60.8c-37.1 0-57.9 25.8-58.1 61 0 30.6 17.1 59.3 57.4 59.3s55.7-31.1 55.7-59.6c.5-29.6-15.2-60-55-60.7zm109.7 126.1c0 6.5.2-30.9 0-36.6h27.2l1.9 22.9c8.9 5.1 22.7 8.9 34 8.9 21 0 42.9-5.3 42.9-25.8-.7-18.6-25.1-22.4-44.8-24.4-33.5-3.4-60.5-11.6-60.5-49.2 0-33.5 37.9-50.2 66.1-50.2 22.7-.5 38.8 3.1 59.3 19.5 0 13.5-.2 21.5-.2 35h-26.3l-1.7-22.2c-10.6-5.1-21.5-6.5-29.9-6.3-18.1.2-37.4 8.7-37.4 23.9 0 14.9 12.5 19 34.7 22.2 36.2 4.8 71.1 13 71.1 51.6-.2 42.2-39.8 53.3-73.8 53.3-25.9.1-42.1-4.7-62.6-22.6z" fill="currentcolor"></path><path d="M1128.4 534.2c0 7.7-6.2 13.9-13.9 13.9H953.8c-7.7 0-13.9-6.2-13.9-13.9V533c0-7.7 6.2-13.9 13.9-13.9h160.7c7.7 0 13.9 6.2 13.9 13.9v1.2z" fill="#FAA41A"></path>
+            </svg>
         </div>
-        
         <br><br>
+        <h2>Productivity</h2>
+        For this task, I absolutely love <a href="https://www.debian.org/">Debian.</a> Debian is a GNU/Linux distribution that is completely free/libre. An issue that one may have, however, is that it is hard to install proprietary software on this distribution.
+        <a href="https://www.debian.org/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-530 -75 1150 260">
+                <g fill="#D70751">
+                  <path d="M64.525 62.053c-4.125.058.78 2.125 6.165 2.954 1.488-1.161 2.838-2.336 4.04-3.479-3.354.821-6.765.838-10.205.525m22.14-5.52c2.457-3.389 4.246-7.102 4.878-10.939-.551 2.736-2.035 5.099-3.435 7.592-7.711 4.854-.726-2.883-.004-5.824-8.29 10.436-1.138 6.257-1.439 9.171m8.174-21.265c.497-7.428-1.462-5.08-2.121-2.245.766.4 1.377 5.237 2.121 2.245M48.883-66.264c2.201.395 4.757.698 4.398 1.224 2.407-.528 2.954-1.015-4.398-1.224"/>
+                  <path d="m53.281-65.04-1.556.32 1.448-.127.108-.193"/>
+                  <path d="M121.93 38.085c.247 6.671-1.95 9.907-3.932 15.637l-3.564 1.781c-2.919 5.666.282 3.598-1.807 8.105-4.556 4.049-13.823 12.67-16.789 13.457-2.163-.047 1.469-2.554 1.943-3.537-6.097 4.188-4.894 6.285-14.217 8.83l-.273-.607C60.29 92.569 28.344 71.129 28.765 41.875c-.246 1.857-.698 1.393-1.208 2.144-1.186-15.052 6.952-30.17 20.675-36.343 13.427-6.646 29.163-3.918 38.78 5.044C81.73 5.8 71.217-1.534 58.757-.848c-12.208.193-23.625 7.95-27.436 16.369-6.253 3.938-6.979 15.177-9.704 17.233-3.665 26.943 6.896 38.583 24.762 52.275 2.812 1.896.792 2.184 1.173 3.627-5.936-2.779-11.372-6.976-15.841-12.114 2.372 3.473 4.931 6.847 8.239 9.499-5.596-1.897-13.074-13.563-15.256-14.038 9.647 17.274 39.142 30.295 54.587 23.836-7.146.263-16.226.146-24.256-2.822-3.371-1.734-7.958-5.331-7.14-6.003 21.079 7.875 42.854 5.965 61.09-8.655 4.641-3.614 9.709-9.761 11.173-9.846-2.206 3.317.377 1.596-1.318 4.523 4.625-7.456-2.008-3.035 4.779-12.877l2.507 3.453c-.931-6.188 7.687-13.704 6.813-23.492 1.975-2.994 2.206 3.22.107 10.107 2.912-7.64.767-8.867 1.516-15.171.81 2.118 1.867 4.37 2.412 6.606-1.895-7.382 1.948-12.433 2.898-16.724-.937-.415-2.928 3.264-3.383-5.457.065-3.788 1.054-1.985 1.435-2.917-.744-.427-2.694-3.33-3.88-8.9.86-1.308 2.3 3.393 3.47 3.586-.753-4.429-2.049-7.805-2.103-11.202-3.421-7.149-1.211.953-3.985-3.069-3.641-11.357 3.021-2.637 3.47-7.796 5.52 7.995 8.667 20.387 10.11 25.519-1.103-6.258-2.883-12.32-5.058-18.185 1.677.705-2.699-12.875 2.18-3.882-5.21-19.172-22.302-37.087-38.025-45.493 1.924 1.76 4.354 3.971 3.481 4.317-7.819-4.656-6.444-5.018-7.565-6.985-6.369-2.591-6.788.208-11.007.004-12.005-6.368-14.318-5.69-25.368-9.681l.502 2.349c-7.953-2.649-9.265 1.005-17.862.009-.523-.409 2.753-1.479 5.452-1.871-7.69 1.015-7.329-1.515-14.854.279 1.855-1.301 3.815-2.162 5.793-3.269-6.271.381-14.971 3.649-12.286.677C20.144-62.46 1.976-56.053-8.218-46.494l-.321-2.142c-4.672 5.608-20.371 16.748-21.622 24.011l-1.249.291c-2.431 4.116-4.004 8.781-5.932 13.016-3.18 5.417-4.661 2.085-4.208 2.934-6.253 12.679-9.359 23.332-12.043 32.069 1.912 2.858.046 17.206.769 28.688-3.141 56.709 39.8 111.77 86.737 124.48 6.88 2.459 17.11 2.364 25.813 2.618-10.268-2.937-11.595-1.556-21.595-5.044-7.215-3.398-8.797-7.277-13.907-11.711l2.022 3.573c-10.021-3.547-5.829-4.39-13.982-6.972l2.16-2.82c-3.249-.246-8.604-5.475-10.069-8.371l-3.553.14c-4.27-5.269-6.545-9.063-6.379-12.005l-1.148 2.047c-1.301-2.235-15.709-19.759-8.234-15.679-1.389-1.271-3.235-2.067-5.237-5.703l1.522-1.739c-3.597-4.627-6.621-10.562-6.391-12.536 1.919 2.592 3.25 3.075 4.568 3.52-9.083-22.539-9.593-1.242-16.474-22.942l1.456-.116c-1.116-1.682-1.793-3.506-2.69-5.298l.633-6.313c-6.541-7.562-1.829-32.151-.887-45.637.655-5.485 5.459-11.322 9.114-20.477l-2.227-.384C-27.316-2.419-7.271-24.81 2.011-23.658c4.499-5.649-.892-.02-1.772-1.443 9.878-10.223 12.984-7.222 19.65-9.061 7.19-4.268-6.17 1.664-2.761-1.628 12.427-3.174 8.808-7.216 25.021-8.828 1.71.973-3.969 1.503-5.395 2.766 10.354-5.066 32.769-3.914 47.326 2.811 16.895 7.896 35.873 31.232 36.622 53.189l.852.229c-.431 8.729 1.336 18.822-1.727 28.094l2.1-4.385"/>
+                  <path d="m19.5 67.715-.578 2.893c2.71 3.683 4.861 7.673 8.323 10.552-2.49-4.863-4.341-6.872-7.745-13.445m6.409-.251c-1.435-1.587-2.284-3.497-3.235-5.4.909 3.345 2.771 6.219 4.504 9.143l-1.269-3.743m113.411-24.65-.605 1.52c-1.111 7.892-3.511 15.701-7.189 22.941 4.06-7.639 6.69-15.995 7.79-24.461M49.698-68.243c2.789-1.022 6.855-.56 9.814-1.233-3.855.324-7.693.517-11.484 1.005l1.67.228m-97.917 52.067c.642 5.951-4.477 8.26 1.134 4.337 3.007-6.773-1.175-1.87-1.134-4.337m-6.593 27.538c1.292-3.967 1.526-6.349 2.02-8.645-3.571 4.566-1.643 5.539-2.02 8.645"/>
+                </g>
+              </svg>
+        </a>
+        <h2>Maybe not Ubuntu</h2>
+        Ubuntu is maintained by a company called Canonical. Canonical is a Microsoft partner. At that point, it is up to you wether you trust Canonical after that.
+
+        <h1>After Installation</h1>
+        <input type="checkbox"> Learn the terminal<br>
+        <input type="checkbox"> Learn to use the system<br>
+        <input type="checkbox"> Learn basic configuration files<br>    
+        <input type="checkbox"> Installing packages<br>
+        <input type="checkbox"> Updating the system<br>
+        <br>
+        After installation (we're going to assume you chose Debian with the KDE desktop environment, but Pop!OS being based off of Ubuntu is very similar), you're going to want to learn how to use it. KDE Plasma should be familiar to the Windows Aero desktop environment.
+        <h2>The Terminal</h2>
+        This is one of the largest reasons that people don't switch to GNU/Linux is because they do not want to spend time or do not have the time to learn the terminal. Eventually, GNU/Linux distributions will get so streamlined that the terminal won't ever be needed. But for now, you should learn the basic terminal commands.
+        <br> Open the terminal (you can search Terminal or Konsole for KDE) and type a few of these commands.
+        <h3>ls</h3> 
+        This lists files in the current folder (or in this case, directory). You should see something similar to this:
+        <br> <br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian ~]$ ls <br>
+                Desktop     Downloads<br>
+                Documents   Videos <br>
+                [user@debian ~]$
+            </code>
+        </div> <br>
+        Congratulations! Instead of using the 'ls' command, you can open the file manager Dolphin or Thunar to view and manage files. You may notice the '~' in the prompt. That is called the "working directory" because it is the directory you are working in. '~' is an easy way to say "home directory" which is the equivalent to the windows user folder.
+        We can get the path of the current working directory by typing the following command:<br>
+        <h3>pwd</h3>
+        Note: pwd stands for "print working directory" <br><br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian ~]$ pwd <br>
+                /home/user/ <br>
+                [user@debian ~]$
+            </code>
+        </div> <br>
+        You may notice that file paths are completely different in GNU/Linux. Instead of having a drive letter followed by back slashes, you instead just have forward slashes just like website urls. As a result, it is a lot easier to type GNU/Linux directories than to type Windows directories.
+        <br>C:\Users\user\ vs /home/user<br>
+        If you have ever messed around with Windows, you have probably went to the C:\ directory. This is what is known as the "root directory" and in GNU/Linux it is known as '/'. We can go between directories by typing this command:
+        <h3>cd</h3>
+        Note: cd stands for "change directory" <br><br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian ~]$ cd / <br>
+                [user@debian /]$
+            </code>
+        </div> <br>
+        Then, if you type ls, you will see that the root directory is extremely different from Windows.
+        <div class="codebox center" style="text-align: left; width: 50%;">
+            <code>
+                [user@debian ~]$ ls <br>
+                bin   dev  home  lib64       mnt  proc  run   srv  tmp  var
+                boot  etc  lib   lost+found  opt  root  sbin  sys  usr <br>
+                [user@debian /]$
+            </code>
+        </div> <br>
+        If you are following along, you can probably guess that typing "cd ~" will return you to the users home directory. You can also just type "cd" and it will default to the home directory.<br>
+        If you want to go to the "Documents" directory, you can either type "cd /home/user/Documents" or if you are in the same directory as the Documents directory, you can just type "cd Documents/". Most terminals will have "tab completion" which will complete words in the given context.<br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian ~]$ cd Docu <kbd>TAB</kbd> <br>
+                [user@debian ~]$ cd Documents/
+            </code>
+        </div> <br>
+        This logic can also apply to commands. Anyway, now that you are in the Documents folder, lets learn how to make files.
+        <h3>touch</h3>
+        The touch command will create empty files with the given name. The name "touch" comes from the ability to literally touch a file, which updates the files modified and access timestamp.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ touch important document<br>
+                [user@debian Documents]$ ls <br>
+                document <br>
+                important <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        What happened here? Because the space is a seperator for arguments (basically telling a program what to do), it created two empty files "important" and "document".  
+        We can make touch treat this like one argument by surrounding it in quotation marks like this:
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ touch "important document"<br>
+                [user@debian Documents]$ ls <br>
+                document <br>
+                important<br>
+                'important document' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        The quotation marks indicate a "string". This is just a programming term for a bunch of alphanumeric characters put between quotation marks. You probably don't want the "document" or the "important" files anymore, so we can remove them like this: <br>
+        <h3>rm</h3>
+        rm stands for remove. It mainly uses the same kind of arguments like before, so we can either do:
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ rm important<br>
+                [user@debian Documents]$ rm document <br>
+                [user@debian Documents]$ ls <br>
+                [user@debian Documents]$
+            </code>
+        </div> 
+        or
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ rm important document<br>
+                [user@debian Documents]$ ls <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        If you are anything like me, you like to organize your Documents directory. We can do this by creating a new directory.
+        <h3>mkdir</h3>
+        This stands for make directory. The arguments are almost exactly like touch, meaning we can make the same mistake as before.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mkdir important directory<br>
+                [user@debian Documents]$ ls <br>
+                directory <br>
+                'important document' <br>
+                important <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        We can use the command "rmdir" in the same way to remove <b>empty</b> directories. 
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ rmdir important directory<br>
+                [user@debian Documents]$ ls <br>
+                'important document' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        If your directory has files in it, you will need to use the rm command with the -r option. The -r means "recursive" which means that it will go through every file and directory in that directory.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ rm -r important directory<br>
+                [user@debian Documents]$ ls <br>
+                'important document' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        We can then correct the mistake like before.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mkdir "important directory"<br>
+                [user@debian Documents]$ ls <br>
+                'important directory' <br>
+                'important document' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        Right now 'important document' is not in the 'important directory'. We can fix this using:
+        <h3>mv</h3>
+        We can move files using the mv command like this:
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mv important document important directory<br>
+                mv: cannot stat 'important': No such file or directory <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        What happened here? When using the mv command like in the example, it will first look at the arguments and treat every one of them like a file until it sees a directory. In this case, we never gave it a directory so it would error anyway. Not only that, <br>
+        none of the supplied files exist, which is why we got the error we did. We can fix this by doing the same quotation marks method.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mv "important document" "important directory"<br>
+                [user@debian Documents]$ ls <br>
+                'important directory' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        As a side note, it usually isn't a good idea to have spaces in your file names and directory names. You should also camelCase them. This way, it is easier to type in a terminal or reference in code. We can view the file like this:<br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ ls "important directory"<br>
+                'important document' <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        If you want to correct the file name, we can use the mv command to rename files and directories.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mv "important directory" importantDirectory<br>
+                [user@debian Documents]$ ls <br>
+                importantDirectory <br>
+                [user@debian Documents]$ mv importantDirectory/'important document' importantDocument <br>
+                [user@debian Documents]$ ls <br>
+                importantDirectory <br>
+                importantDocument <br>
+                [user@debian Documents]$ 
+            </code>
+        </div> <br>
+        What happened here? The mv command renamed the file, but because we didn't tell it to move to the directory the file was in, it automatically moved to the current working directory. We can move it back into the directory the same way as before:
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ mv importantDocument importantDirectory<br>
+                [user@debian Documents]$ ls <br>
+                importantDirectory <br>
+                [user@debian Documents]$ ls importantDirectory <br>
+                importantDocument <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        For future reference, the correct command would have been: "mv importantDirectory/'important document' importantDirectory/importantDocument" We are going to cd into the importantDirectory and edit the importantDocument. <br>
+        There are many text editors for GNU/Linux, but we're going to talk about the two big ones. <br>
+        <table class="center">
+            <tr>
+                <th>VIM</th>
+                <th>NANO</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Harder to learn</li>
+                        <li>Modal text editor</li>
+                        <li>Usually isn't included</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Easier to learn</li>
+                        <li>Non-standard controls</li>
+                        <li>Usually included</li>
+                    </ul>
+                </td>
+            </tr>
+        </table> <br>
+        I prefer the VIM editor because it allows me to get documents written faster. This page was written in VIM.
+        You will probably need to install vim as it does not come with most GNU/Linux distributions. Let's learn package managment real fast:
+        <h3>apt</h3>
+        This is the package manager for debian. This also appears on Ubuntu based systems like Pop!OS. To install vim, and thus any package, you will need to use the argument "install" like this:
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ apt install vim<br>
+                ... <br>
+                E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root? <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+        What happened here? This is because we aren't "root". We can use the "su" command to switch to the root user. Think of this as the admin account for Windows.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ su root<br>
+                Password: (input root password) <br>
+                [root@debian Documents]#
+            </code>
+        </div> <br>
+        We can now use the apt command.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [root@debian Documents]# apt install vim<br>
+                Reading package lists... Done <br>
+                Building dependency tree... Done <br>
+                Reading state information... Done <br>
+                ... <br>
+                After this operation, # MB of additional disk space will be used. <br>
+                Do you want to continue? [Y/n] Y <br>
+                ... <br>
+                [root@debian Documents]#
+            </code>
+        </div> <br>
+        What if we don't want to switch users every time? We should now edit the /etc/sudoers file to include our user.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [root@debian Documents]# vim /etc/sudoers<br>
+                ## sudoers file.<br>
+                ##<br>
+                ## This file MUST be edited with the 'visudo' command as root.<br>
+                ## Failure to use 'visudo' may result in syntax or file permission errors<br>
+                ## that prevent sudo from running.<br>
+                ##<br>
+                ## See the sudoers man page for the details on how to write a sudoers file.<br>
+                ##<br>
+                <br>
+            </code>
+        </div> <br>
+        BEFORE YOU START TRYING TO TYPE!<br>
+        VIM is a modal text editor, meaning we need to change modes. Right now, we are in "normal" mode. This is the preferred mode for moving about the editor. We use the keys h (left) j (down) k (up) l (right) for cursor movement. If this seems odd to you, the idea is that your fingers remain on the home row of the keyboard.
+        "H is at the <b>left</b>, J swoops <b>down</b>, K points <b>up</b>, L is at the <b>right</b>". I could make up a better phrase, but since this works for me this is all I could bother making. To get into insert/edit mode, we need to either use i or a. A is for after, which starts inserting after the highlighted character. I is the same thing but it starts before.
+        Think of it like this:<br>
+        i|@|a<br>
+        For organizational purposes, we need to go to the section where it says "User privilege specification". We can search and jump to this string using /:<br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                ##<br>
+                ## User privilege specification<br>
+                ##<br>
+                root ALL=(ALL:ALL) ALL<br>
+                <br>
+                /User privilege specification
+                <br>
+            </code>
+        </div> <br>
+        As you can see, root has all sudo privileges. We can copy this line and paste it on the next line using "yank and paste".
+        Press <kbd>ENTER</kbd> to move the cursor to the search selection. Move the cursor over the line that starts with "root". It doesn't matter where the cursor specifically is just yet. Press <kbd>yy</kbd> on your keyboard while in normal mode. This will copy it to the clipboard. While still in normal mode, move the cursor to the next blank line and press <kbd>p</kbd>. You should now have another "root" privelege. <br>
+        Move the cursor over the r in root and press <kbd>x</kbd> until the word root is gone. Press <kbd>i</kbd> and type your username. It should now look something like this: <br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                ##<br>
+                ## User privilege specification<br>
+                ##<br>
+                root ALL=(ALL:ALL) ALL<br>
+                user ALL=(ALL:ALL) ALL<br>
+                <br>
+            </code>
+        </div> <br>
+        Press <kbd>ESC</kbd> to exit insert mode and type <kbd>:wq</kbd> to write/save and quit the file. <br>
+        We can now exit the root user by typing "exit". <br>
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [root@debian Documents]# exit <br>
+                [user@debian Documents]$ <br>
+            </code>
+        </div> <br>
+        Now, we can run the command "sudo" to run a command once as the root user. You will use your root pasword.
+        <div class="codebox center" style="text-align: left;">
+            <code>
+                [user@debian Documents]$ sudo whoami <br>
+                [sudo] password for user: <br>
+                root <br>
+                [user@debian Documents]$
+            </code>
+        </div> <br>
+
+        <!--end of text-->  <br><br>
     </div>
     <h4 style="text-align: center;"><a href="#top">Return to Top</a></h4>
 </body>
