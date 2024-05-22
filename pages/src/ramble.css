@@ -59,6 +59,13 @@ ol li {
   text-indent: 5px;
 }
 
+.textPage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* this one is used for other things that arent images like banners */
 .center {
   margin-left: auto;
   margin-right: auto;
