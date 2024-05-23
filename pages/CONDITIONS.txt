@@ -1,10 +1,10 @@
 This document will be written in plain and simple English and not legalese. However, if I have to, this document will be written like a legal license like the GNU GPL licenses. The conditions are pretty simple:
 
-	•	If you cite any post made to the affected pages, you must provide the whole post verbatim.
+	>	If you cite any post made to the affected pages, you must provide the whole post verbatim.
 
-	•	You may not use any post made to the affected pages for AI or machine learning programs or any programs that would use file data to create new data.
+	>	You may not use any post made to the affected pages for AI or machine learning programs or any programs that would use file data to create new data.
 
-	•	I would appreciate if you link the index page of my website somewhere on the page as the one you cited me on, NOT the journal.html page. 
+	>	I would appreciate if you link the INDEX page of my website somewhere on the page as the one you cited me on. 
 
 
 THESE CONDITIONS ONLY APPLY TO THE FOLLOWING PAGES: 
