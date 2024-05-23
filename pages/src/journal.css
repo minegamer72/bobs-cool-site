@@ -1,0 +1,23 @@
+#heading {
+    text-align: center;
+}
+
+/* posts 
+
+*/
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    padding: 30px;
+    grid-auto-flow: row;
+}
+.postsChild {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 12pt;
+    text-align: center;
+    word-wrap: break-word;
+    
+}
