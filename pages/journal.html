@@ -4,6 +4,7 @@
     <title>Bob's Journal!</title>
     <link rel="stylesheet" href="src/bob.css">
     <link rel="stylesheet" href="src/journal.css">
+    <script src="rambles/js/diary.js"></script>
 </head>
 
 <style>
@@ -17,19 +18,28 @@
 </header>
 
 <html>
-    <body>
+    <body id="body">
         <div id="heading">
-            <glowtext><h1>Bob's Journal!</h1></glowtext>
-            <p>Little social media replacement I made. This is where you'll see little "posts" by me, but chances are you won't care.</p>
+            <button onclick="bobsDiary()"><glowtext><h1 id="journalHeader">Bob's Journal!</h1></glowtext></button>
+            <p>This is a social media replacement I made. This is where you'll see little "posts" by me, but chances are you won't care.</p>
             <p>Note: The updates to this page will not be synchronized with GitHub. The main function and the first post will be on there though.</p>
             <p>For those interested in using any of the posts below for AI or just looking to cite my writings, please read the conditions listed below:</p>
-            <a href="CONDITIONS.txt">CONDITIONS</a> (22/5/24) <br><br>
+            <a href="CONDITIONS.txt">CONDITIONS</a> (Please see https://bobs-cool-site.neocities.org/pages/CONDITIONS.txt for the last updated date) <br><br>
             <p style="font-size: 10px">I am not confessing to any acts stated in this webpage. The contents of these posts should not be treated as factual or as a confession.</p>
             <hr>
         </div>
 
         <div class="posts">
-            <div class="postsChild">Sometimes, I dream about cheese.</div>
+            <div class="postsChild" id="post">Test 1. <br> 1/1/01 @ 12:00 PM </div>
+            <div class="postsChild" id="post">Test 2. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 3. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 4. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 5. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 6. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 7. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 8. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 9. <br> 1/1/01 @ 12:00 PM</div>
+            <div class="postsChild" id="post">Test 10. <br> 1/1/01 @ 12:00 PM</div>
         </div>
     </body>
 </html>

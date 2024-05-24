@@ -21,3 +21,7 @@
     word-wrap: break-word;
     
 }
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
