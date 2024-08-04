@@ -11,6 +11,7 @@ Source code to my new website on neocities.
 2. "Posts" in the journal page
 3. Buttons in the button collection
 
-You are still free to use the F12 menu for viewing the HTML of rambles or posts or buttons.
+# Why?
+I write articles and posts that may violate the TOS of github. If you want to view the HTML for a specific ramble, press F12 and read the HTML source.
 
 # [You can visit the stable version of the website here](https://bobs-cool-site.neocities.org/ "Site link")
