@@ -1,0 +1,23 @@
+This document will be written in plain and simple English and not legalese. However, if I have to, this document will be written like a legal license like the GNU GPL licenses. The conditions are pretty simple:
+
+	>	If you cite any text made to the affected pages, you must provide the whole sentence/post/etc verbatim.
+
+	>	You may not use any data made to the affected pages for AI or machine learning programs or any programs that would use file data to create new data.
+
+	>	I would appreciate if you link the INDEX page of my website somewhere on the same page as the one you cited me on. 
+
+In this case, the word "data" covers:
+Text
+Images
+Videos
+
+
+THESE CONDITIONS ONLY APPLY TO THE FOLLOWING PAGES: 
+
+pages/diary.html 
+
+IF THERE ARE ANY ADDITIONS TO THIS DOCUMENT, THE DATE IN THE HEADING WILL BE UPDATED TO THE DATE THE NEW VERSION WAS RELEASED TO THE PUBLIC IN THIS FORMAT: dd/mm/yy (DAY/MONTH/YEAR)
+
+TO CHECK FOR UPDATES TO THIS DOCUMENT PRESS THE FOLLOWING KEY COMBINATION:
+CTRL + SHIFT + R
+THIS WILL CLEAR THE VERSION CACHED ON YOUR DEVICE.

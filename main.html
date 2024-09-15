@@ -4,7 +4,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jquery-->
   <!--<script src="js/getcatfact.js"></script> -->
-  <script src="js/getcat.js"></script>
+  <link rel="stylesheet" href="pages/src/bob.css">
   <title>Bob's cool site!</title>
   <meta charset="UTF-8"> <!--some things dont load properly without this-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,12 @@
   }
 
   .link-grid {
-    display: grid;
+    display: flex;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    
   }
 
   a {
@@ -54,22 +55,53 @@
   }
 
   .linkbox {
-    width: 70%;
+    height: 80%;
+    width: 12%;
     float: center;
-    text-align: center;
-    border: solid 2px;
-    border-color:rgb(180, 180, 180);
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 9px 10px rgba(15, 15, 15, 0.815);
-    background-color: #060608;
-    margin-left: auto;
+    text-align: left;
+    background-color: #ffffff00;
+    margin-top: 2%;
+    margin-left: 260px;
     margin-right: auto;
+    color: #e8e8d3;
+  }
+  .marqueeText {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+  .projectBox {
+    height: 80%;
+    width: 12%;
+    float: center;
+    text-align: left;
+    background-color: #ffffff00;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 13.5%;
+    color: #e8e8d3;
   }
 
+  .textBox {
+    height: 80%;
+    width: auto;
+    float: center;
+    text-align: center;
+    background-color: #ffffff00;
+    margin-left: 26.5%;
+    margin-right: 27%;
+    color: #000000;
+  }
   body {
-    color: white;
-    background-color:#060608;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+        background-color:#ffffff;
+        display:flex;
+        flex-direction: column;
+
   }
 
   .link {
@@ -96,80 +128,113 @@
   }
 
   hr {
-    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.507);
+    color:#FFA7D5;
+    width: 95%;
   }
 
+  .banner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 5px solid #ffffff;
+      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.507);
+      border-radius: 15px;
+      transform-origin: center;
+    }
+
+    .banner:active {
+        transform: scale(0.9251);
+        transition: .11s;
+        border: 5px solid #ffffff;
+        border-radius: 15px;
+        box-shadow: none;
+        animation: jerk 0.5s infinite;
+    }
+    
+
   glowText {
-    text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
-    filter: glow(color=#c1fcff,strength=5);
+    text-shadow: #ffc4e2 0 0 10px, #ffdff0 0 0 13px;
+    filter: glow(color=#ffc4e2,strength=5);
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: #ff8cc8;
   }
 
   buttonLink {
     text-shadow: none;
     filter: none;
     font-size: 20px;
-    color: rgb(167, 167, 167);
+    color: #ff8cc8;
   }
 
   buttonLink:hover {
     font-size: 22px;
-    text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
-    filter: glow(color=#c1fcff,strength=5);
-    color: rgb(255, 255, 255);
+    text-shadow: #ffc4e2 0 0 10px, #ffdff0 0 0 13px;
+    filter: glow(color=#ffc4e2,strength=5);
+    color: #ff8cc8;
   }
   buttonLink:active {
     font-size: 20px;
   }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
   </style>
 </head>
   <body><div id="main">
-
+    <img src="img/mainBG.webp">
     <title>Bob's Cool Site!</title>
-
-    <h1 style="text-align:center; color:aliceblue"><glowtext>Welcome to my website!</glowtext></h1> <!-- about me header -->
-    <h5 style="text-align:center; color:aliceblue">You are using the clearnet version of this website!<br> Onion Site: jqx45sg4irya7znrptjbkodhgd6c57nzbwjzis27hme5mzp2wpwa4hyd.onion  <!-- clearnet notice -->
-      <a href="pages/rambles/KOSA.html"><p style="text-align:center;">Here is the main reason why I am hosting this.</p></a>
-      <a href="https://thecatapi.com/">
-        <p style="text-align:center; color:rgb(255, 255, 255); text-decoration: none;"><u>thecatapi.com</u></p>
-      </a>
-      <div id="cat-images"  ></div>
-<!--
-      <h3 style="text-align:center; color:aliceblue">Random Cat Facts:</h3>
-      <p style="text-align:center; color:aliceblue;font-size:small;">These facts came from a no-license JSON table. There have been few modifications. If there are any untrue statements in this table, please let me know!</p>
-      <h2 style="text-align:center; color:rgb(204, 204, 204)" id="cat-fact"><i>JS must be enabled for this to work.</i></h2>
--->
-
       <br>
         <!--link box -->
-      <div class="linkbox">
-        <h3 style="color:white"><glowtext>Page Directory</glowtext></h3>
-        <p>| # = WIP or what I'm focusing on. | X = 404 (doesn't exist yet) | ! = New |</p>
-        <hr>
-        <p style="color:white">
-          <!--<a href="pages/announcements.html"><buttonLink>Site Announcements</buttonLink></a>-->
-          <a href="pages/journal.html"><buttonLink>Journal</buttonlink></a>
-          &nbsp;
-          <a href="pages/whoami.html"><buttonLink>Who am I?</buttonLink></a>
-          &nbsp;
-          <a href="pages/definitions.html"><buttonLink>Word Definitions</buttonLink></a>
-          &nbsp;
-          <a href="pages/writings.html"><buttonLink>Writings</buttonLink></a>
-          &nbsp;
-          <a href="pages/pgp.html"><buttonLink>PGP Key and Why I use one</buttonLink></a>
-          &nbsp;
-          <a href="pages/buttons.html"><buttonLink>Button Collection</buttonLink></a>
-          &nbsp;
-          <a href="pages/projects.html"><buttonLink>Projects</buttonlink></a>
-        </p>
-        
-        <p  > i am currently feeling: <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a> </p>
         <br>
-          I removed the chatbox because of its use of nontrivial javascript. If you have questions or comments about the website, <a href="pages/whoami.html#contact">you can reach me here.</a> 
-        <br><br>
-      </div>
-      <p style="text-align: center; font-size: 75%">The HTML, CSS and JS code for this website is under the <a href="LICENSE.txt">GNU General Public License v3.0</a>. First party images (the ones that I own and have created) are under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 license</a>. Other images, including 3rd party site buttons are subject to their own licensing. Iframes or embeds that go to other sites are subject to their own licensing. You can view the source code of this website <a href="https://github.com/minegamer72/bobs-cool-site">here</a>.</p>
+        <div class="linkbox" style="top: 50px; position:absolute; margin-left: 170px;">
+          <p style="color:white; text-align: center;"><glowtext>Page Directory</glowtext></p>
+          <hr style="width: 50%;">
+          <p style="color:white; text-align: center;">
+            <!--<a href="pages/announcements.html"><buttonLink>Site Announcements</buttonLink></a>-->
+            <a href="pages/diary.html"><buttonLink>Diary</buttonlink></a>
+            <br>
+            <a href="pages/whoami.html"><buttonLink>Who am I?<sup>*</sup></buttonLink></a>
+            <br>
+            <a href="pages/writings.html"><buttonLink>Writings</buttonLink></a>
+            <br>
+            <a href="pages/buttons.html"><buttonLink>Button Collection</buttonLink></a>
+            <br>
+            <a href="pages/quiz.html"><buttonLink>Quiz Results</buttonLink></a>
+            <br>
+            <a href="pages/dreams.html"><buttonLink>Dream Journal</buttonLink></a>
+          </p>
+        </div>
+        <div class="projectBox" style="top: 50px; position:absolute; margin-left: 1320px;">
+          <p style="color:white; text-align: center;"><glowtext>Projects</glowtext></p>
+          <hr style="width: 50%;">
+          <p style="color:white; text-align: center;">
+            <a href="https://github.com/minegamer72/bobs_autoclicker"><buttonLink>Bob's Autoclicker</buttonlink></a>
+            <br>
+            <a href="pages/projects/mimg"><buttonLink>GIMP Garbage</buttonlink></a>
+            <br>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3318616082"><buttonLink>gm_chiitan</buttonlink></a>
+            <br>
+          </p>
+        </div>
+        <div class="textBox" style="top: 130px; position:absolute; margin-left: 600px; width: 600px;">
+          <hr>
+          <h1 style="text-align:center; color:aliceblue"><glowtext>HEWWO!!!!! WELCOME TO MY SITE!!!! :3</glowtext></h1> <!-- about me header -->
+          here i ramble about a lot of topics like <a href="pages/rambles/nomicrosoft.html">technology</a>, <a href="pages/rambles/KOSA.html">political</a> (this is usually US politics) and more!!! there is also a <a href="pages/diary.html">diary</a> where i make posts that are too short to be a ramble.
+          this website is intended for a 1920x1080 display!!!! it may not look good otherwise!! D: <br> right now i feel <a href="https://www.imood.com/users/bob12345"><img src="https://moods.imood.com/display/uname-bob12345/imood.gif" alt="The current mood of bob12345 at www.imood.com" border="0"></a>.
+          <br> <br> <hr>
+          <br>
+        </div>
+      <footer>
+        <!--imo its more fun to read the text while scrolling but u do u-->
+        <marquee hspace="160" width="1401" scrollamount="20">
+          <span class="marqueeText" style="white-space: pre;">
+            <p style="text-align: center; font-size: 200%; margin-bottom: 50px; margin-left: 641px; color:black;">The HTML, CSS and JS code is easily accessible at <a href="https://github.com/minegamer72/bobs-cool-site">https://github.com/minegamer72/bobs-cool-site</a>. Images I own and have created are under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 license</a>. Images I have not created (things like site buttons and usually blinkies) are subject to their own licensing. Embeds that go to other sites are subject to their own licensing.                                                                                                                                                                                                                                                                                                                                                                                                                why are u still here?                                          looking for something? :3                                                                        well... i <i>guessssss</i> i can give you something...               CREDITS AND SPECIAL THANKS: <a href="https://neocities.org/site/bobs-cool-site">bob</a> (code, site backgrounds art, webmaster), <a href="https://neocities.org/site/jodieblend">jodieblend</a> (help with some code, ideas), <a href="https://x.com/saltpuff">saltpuff (X)</a> (letting me use her art), <b>YOU</b> (being here, reading my pages, being just fucking awesome)                                      also                                          send an <a href="pages/whoami.html#contact">email (not DM)</a> with the origins of all of these references in order! you're only allowed to miss one for an image of my cat. if you get all of them correct, i will make any page you want (please no NSFW or political stuff, i also have the right to change the topic of the page as i see fit)... ready?            <span style="text-align: center; font-size: 200%; margin-bottom: 50px; margin-left: 641px; color:red;">Hacked by Chinese!</span>   Your Angry Computer (what was the text content of this malwares textbox? bonus image if you can name the file size of the animation it plays)               cola, melon, orange                socky tan ducky doo                 SEU BURRO, NÃO TA VENDO QUE O BOTÃO ESTA TE FAZENDO DE TROUXA???                   I'm Psycho Sushi!!!                  ♪<i>Pissed off my mom again, I should take my vitamins</i>♪               "I believe the only way to play Atari is on an old piece of shit like that!"            if u need this in a .txt format, <a href="THE.txt">here it is!</a>                                                                                                                                                                                                               uhhhhhh..... theres nothing else btw.....                                                                                                                                                                                                                                                well.....                                                                                                                                                                                    there is something else..                                                            somewhere..                                                                                                                                                                                    it's not here though. i promise.                                                                                                                                                                                    The HTML, CSS and..... i can't loop it juusssttt yet, i'm having quite the time typing text nobody but you will wait to read except in source code.                                                                                                                         well.. i lied! there is something else here! it's a hint...                                                                                          the numbers on this site may or may not mean anything.... ok, i'm done! the text is looping now.</p>
+          </span>
+        </marquee>
+      </footer>
+      
       <noscript><p style="text-align: center; font-size: 110%">If you are reading this, your browser either has JS disabled or does not support it. This website is mostly pure HTML and CSS, but only has two unimportant JS scripts and a few 3rd-party embeds. You're missing out on a cat picture along with a few links.</p></noscript>
       <noscript><p style="text-align: center; font-size: 110%">If you're on a REALLY old browser (like IE7) or a terminal browser then hotlinked images may not appear at all. The overall function of this website (a lot of text) is still preserved.</p></noscript>
   </div>

@@ -1,4 +1,5 @@
 /* small library for things that are CONSTANTLY repeated. TODO: remove the repeated stuff and call this instead */
+/* GRRR WHY ARENT U UPDATING??? */
 glowText {
     text-shadow: #d7fdff 0 0 10px, #8187ff 0 0 13px;
     filter: glow(color=#c1fcff,strength=5);
@@ -23,8 +24,19 @@ glowHover:hover {
     color: rgb(255, 255, 255);
 }
 
+h1 {
+    color: #FFA7D5;
+}
+
+h2 {
+    color: #FFA7D5;
+}
+
+hr {
+    color: #FFA7D5;
+}
 body {
-    background-color: #060608;
+    background-color: #ffffff;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(255,255,255);
 }

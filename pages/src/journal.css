@@ -1,7 +1,7 @@
 #heading {
     text-align: center;
 }
-
+/* GRRR WHY ARENT U UPDATING??? */
 /* posts 
 
 */
@@ -13,14 +13,16 @@
     grid-auto-flow: row;
 }
 .postsChild {
-    background-color: #0f0f0f;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: #ffffff;
+    border: 1px solid #FFA7D5;
     padding: 20px;
     font-size: 12pt;
     text-align: center;
     word-wrap: break-word;
-    
+    border-style: dashed;
+    border-width: 3px;
 }
+
 button {
     background-color: transparent;
     border-color: transparent;
